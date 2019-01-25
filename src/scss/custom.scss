@@ -1,0 +1,38 @@
+body {
+  background: blue;
+  font-family: "Raleway", sans-serif;
+}
+
+/***** navbar ******/
+
+.navbar {
+  font-weight: 100;
+
+  @include media-breakpoint-down(sm) {
+    background: #1f1f1f;
+  }
+
+  .navbar-brand h3 {
+    font-weight: 100;
+  }
+
+  .nav-item {
+    font-size: 1.4rem;
+  }
+
+  .nav-link:hover {
+    transition: border 0.2s;
+    border-bottom: 1px solid white;
+
+    @include media-breakpoint-down(sm) {
+      border-bottom: none;
+    }
+  }
+}
+
+/***** showcase ******/
+
+#showcase {
+  background: url(../images/main.jpg);
+  min-height: 750px;
+}
