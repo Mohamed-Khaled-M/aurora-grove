@@ -131,3 +131,23 @@ body {
   }
 }
 
+/***** footer ******/
+
+#footer {
+  font-weight: 300;
+
+  ul {
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  .nav-link:hover {
+    transition: border 0.2s;
+    border-bottom: 1px solid #36b3a8;
+
+    @include media-breakpoint-down(sm) {
+      border-bottom: none;
+    }    
+  }
+}
