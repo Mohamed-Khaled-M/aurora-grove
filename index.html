@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +15,9 @@
     <title>Aurora Grove</title>
   </head>
 
-  <body>
-    
-    <nav class="navbar navbar-expand-md navbar-dark">
+  <body id="home">
+
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
       <a class="navbar-brand" href="#">
         <h3 class="mb-0">Aurora Grove</h3>
       </a>
@@ -54,38 +55,75 @@
         <button id="book" class="btn btn-primary btn-lg px-5">BOOK NOW</button>
     </section><!-- /showcase -->
 
-    <section id="about">
-      <div class="container text-center mt-5">
-        <h2>You Show up, We Pitch the Tent!</h2>
+    <section id="about" class="py-5 py-md-0 d-flex align-items-center">
+      <div class="container text-center">
+        <h2 class="mb-md-5">You Show up, We Pitch the Tent!</h2>
         <div class="row">
 
           <div class="col-md-4 p-3">
             <img class="img-fluid d-none d-md-inline" src="src/images/icons/tent.png" alt="Tent Icon">
             <h3>Amenities You Want</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur obcaecati natus debitis rem maxime
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur obcaecati natus
+              debitis rem maxime
               facilis excepturi fugit provident iure placeat.</p>
           </div>
 
           <div class="col-md-4 p-3">
             <img class="img-fluid d-none d-md-inline" src="src/images/icons/campfire.png" alt="Campfire Icon">
             <h3>Amenities You Want</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur obcaecati natus debitis rem maxime
-              facilis excepturi fugit provident iure placeat.</p>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab error id numquam consequuntur
+              consectetur blanditiis quibusdam eaque quisquam, similique nisi.</p>
           </div>
 
           <div class="col-md-4 p-3">
             <img class="img-fluid d-none d-md-inline" src="src/images/icons/nature.png" alt="Nature Icon">
             <h3>Amenities You Want</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur obcaecati natus debitis rem maxime
-              facilis excepturi fugit provident iure placeat.</p>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet necessitatibus molestias
+              assumenda doloremque repellendus dignissimos cumque culpa nostrum neque vero.</p>
           </div>
 
         </div>
       </div>
     </section><!-- /about -->
 
+    <section id="explore" class="py-5 py-md-0 d-flex align-items-center">
+      <div class="container text-center">
+        <h3 class="mb-3">We've Created A Camping Experience That's Turn Key and Hassle Free!</h3>
+
+        <div class="row m-2">
+
+          <div class="col-md-6 p-3">
+            <div class="card">
+              <img class="card-img-top" src="src/images/winter.png" alt="Winter Photo">
+              <div class="card-body">
+                <h2 class="card-title text-primary">Experience</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti
+                  consequatur dicta laborum quas voluptas quos voluptatum dignissimos aliquid voluptatibus!</p>
+                  <a href="#" class="btn btn-outline-primary btn-lg">Go Somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 p-3">
+            <div class="card">
+              <img class="card-img-top" src="src/images/dogs.png" alt="Dogs Photo">
+              <div class="card-body">
+                <h2 class="card-title text-primary">Explore</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti
+                  consequatur dicta laborum quas voluptas quos voluptatum dignissimos aliquid voluptatibus!</p>
+                <a href="#" class="btn btn-outline-primary btn-lg">Go Somewhere</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /explore -->
+
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/popper.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/scripts.js"></script>
   </body>
+
 </html>

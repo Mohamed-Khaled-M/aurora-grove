@@ -6,10 +6,6 @@ body {
 
 .navbar {
   font-weight: 300;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
   z-index: 3;
 
   @include media-breakpoint-down(sm) {
@@ -34,16 +30,16 @@ body {
   }
 }
 
+.nav-scroll {
+  background: #1f1f1f;
+}
+
 /***** showcase ******/
 
 #showcase {
   background: url(../images/main.jpg) bottom center / cover no-repeat;
-  min-height: 750px;
+  min-height: 100vh;
   position: relative;
-
-  @include media-breakpoint-down(sm) {
-    min-height: 500px;
-  }
 
   #overlay {
     position: absolute;
@@ -71,4 +67,24 @@ body {
   #book {
     font-size: 1.5rem;
   } 
+}
+
+/***** about ******/
+
+#about {
+  min-height: calc(100vh + 65px);
+
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+/***** explore ******/
+
+#explore {
+  min-height: calc(100vh + 65px);
+
+  h3 {
+    text-transform: uppercase;
+  }
 }
