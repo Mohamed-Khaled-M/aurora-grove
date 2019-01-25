@@ -72,7 +72,7 @@ body {
 /***** about ******/
 
 #about {
-  min-height: calc(100vh + 65px);
+  padding-top: 8rem;
 
   @include media-breakpoint-down(sm) {
     padding-top: 5rem;
@@ -86,13 +86,38 @@ body {
 /***** explore ******/
 
 #explore {
-  min-height: calc(100vh + 65px);
+  padding-top: 8rem;
 
   @include media-breakpoint-down(sm) {
     padding-top: 5rem;
   }
 
-  h3 {
+  h2 {
     text-transform: uppercase;
   }
 }
+
+/***** chatter ******/
+
+#chatter {
+  padding-top: 8rem;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 5rem;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  .fa-quote-left {
+    opacity: 0.3;
+  }
+}
+
+/***** images ******/
+
+#images {
+  padding-top: 1rem;
+}
+
