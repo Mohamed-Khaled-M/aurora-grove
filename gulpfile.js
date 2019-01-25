@@ -14,5 +14,4 @@ gulp.task('js', function () {
     .pipe(gulp.dest("src/js"));
 });
 
-
 gulp.task('default', gulp.series('sass', 'js'));
