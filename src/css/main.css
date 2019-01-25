@@ -6922,12 +6922,16 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  background: blue;
   font-family: "Raleway", sans-serif; }
 
 /***** navbar ******/
 .navbar {
-  font-weight: 100; }
+  font-weight: 300;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3; }
   @media (max-width: 767.98px) {
     .navbar {
       background: #1f1f1f; } }
@@ -6945,6 +6949,26 @@ body {
 /***** showcase ******/
 #showcase {
   background: url(../images/main.jpg) bottom center/cover no-repeat;
-  min-height: 750px; }
+  min-height: 750px;
+  position: relative; }
+  @media (max-width: 767.98px) {
+    #showcase {
+      min-height: 500px; } }
+  #showcase #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  #showcase #header {
+    z-index: 2; }
   #showcase h1 {
-    font-family: "Questrial", sans-serif; }
+    font-family: "Questrial", sans-serif;
+    line-height: 1; }
+    @media (max-width: 767.98px) {
+      #showcase h1 {
+        font-size: 4rem; } }
+  #showcase #book {
+    font-size: 1.5rem; }
