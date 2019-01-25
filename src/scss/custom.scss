@@ -74,6 +74,10 @@ body {
 #about {
   min-height: calc(100vh + 65px);
 
+  @include media-breakpoint-down(sm) {
+    padding-top: 5rem;
+  }
+
   h2 {
     text-transform: uppercase;
   }
@@ -83,6 +87,10 @@ body {
 
 #explore {
   min-height: calc(100vh + 65px);
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 5rem;
+  }
 
   h3 {
     text-transform: uppercase;
